@@ -11,11 +11,11 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className="absolute top-full right-6  w-5 h-5 border-[.5px] border-slate-500 rounded-full bg-transparent justify-center items-center"
+      className='absolute top-full  right-0 w-5 h-5 border-[.5px] border-slate-500 rounded-full bg-transparent justify-center items-center z-10' 
       style={{ ...style, display: "flex", }}
       onClick={onClick}
       >
-        <FaLongArrowAltLeft className='text-[12px] text-slate-500' />
+         <FaLongArrowAltRight className='text-[12px] text-slate-500' />
     </div>
   );
 }
@@ -24,11 +24,11 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='absolute top-full  right-0 w-5 h-5 border-[.5px] border-slate-500 rounded-full bg-transparent justify-center items-center z-10'
+      className="absolute top-full right-6  w-5 h-5 border-[.5px] border-slate-500 rounded-full bg-transparent justify-center items-center"
       style={{ ...style, display: "flex", }}
       onClick={onClick}
       >
-        <FaLongArrowAltRight className='text-[12px] text-slate-500' />
+       <FaLongArrowAltLeft className='text-[12px] text-slate-500' />
       </div>
    
   );
