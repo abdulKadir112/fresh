@@ -16,7 +16,7 @@ const DealOfTheDay = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('october 25, 2024 00:00:00').getTime(); // Updated to future date
+        const countdownDate = new Date('feb 25, 2025 00:00:00').getTime(); // Updated to future date
         
         interval.current = setInterval(() => {
             const now = new Date().getTime();
